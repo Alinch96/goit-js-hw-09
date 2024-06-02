@@ -1,0 +1,37 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  /* height: 648px; */
+}
+
+/* .gallery > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center;
+} */
+
+.gallery li {
+  width: calc((100% - 24px * 2) / 3);
+  max-height: 200px;
+  overflow: hidden;
+  transition: transform 250ms ease;
+}
+
+.gallery li:hover {
+  transform: scale(1.1);
+}
+
+.sl-overlay {
+  background: rgba(46, 47, 66, 0.8) !important;
+}
+.sl-counter {
+  color: #fff !important;
+}
