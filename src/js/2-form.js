@@ -20,4 +20,7 @@ formEl.addEventListener('submit', e => {
   console.log(formData);
   localStorage.clear();
   formEl.reset();
-})
+  formData.email= '';
+  formData.message = '';
+
+});
